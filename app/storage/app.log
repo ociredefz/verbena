@@ -1,1 +1,2345 @@
 
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Dispatcher:]] could not find controller language
+[[Dispatcher:]] couldn't found a valid routing rule or valid controller/method for request: [[language/get]] rendering the 404 page
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] loading class [[\Bootstrap\Exceptions\AutoloaderException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Dispatcher:]] could not find controller language
+[[Dispatcher:]] couldn't found a valid routing rule or valid controller/method for request: [[language/get]] rendering the 404 page
+[[Dispatcher:]] could not find controller welcome
+[[Loader:]] loading class [[\Bootstrap\Exceptions\ControllerException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Dispatcher:]] could not find controller welcome
+[[Loader:]] loading class [[\Bootstrap\Exceptions\ControllerException]]
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] unable to redeclare class [[bootstrap\components\language]], ignore..
+[[Dispatcher:]] could not find controller language
+[[Dispatcher:]] couldn't found a valid routing rule or valid controller/method for request: [[language/get]] rendering the 404 page
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Dispatcher:]] founds a route rule with controller/method: [[/]]
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Dispatcher:]] founds a route rule with controller/method: [[/]]
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Dispatcher:]] founds a route rule with controller/method: [[/language/set/italian]]
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Dispatcher:]] founds a route rule with controller/method: [[/]]
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Dispatcher:]] founds a route rule with controller/method: [[/language/set/italian]]
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Dispatcher:]] founds a route rule with controller/method: [[/]]
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Dispatcher:]] founds a route rule with controller/method: [[/language/set/italian]]
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Dispatcher:]] founds a route rule with controller/method: [[/]]
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] unable to redeclare class [[bootstrap\components\language]], ignore..
+[[Dispatcher:]] could not find controller language
+[[Dispatcher:]] couldn't found a valid routing rule or valid controller/method for request: [[language/setasd/english]] rendering the 404 page
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] unable to redeclare class [[bootstrap\components\language]], ignore..
+[[Dispatcher:]] could not find controller language
+[[Dispatcher:]] couldn't found a valid routing rule or valid controller/method for request: [[language/seta<i>sd/english]] rendering the 404 page
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] unable to redeclare class [[bootstrap\components\language]], ignore..
+[[Dispatcher:]] could not find controller language
+[[Dispatcher:]] couldn't found a valid routing rule or valid controller/method for request: [[language/seta&lt;i&gt;sd/english]] rendering the 404 page
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\language]]
+[[Loader:]] class file not found, switching to fallback method
+[[Loader:]] unable to redeclare class [[bootstrap\components\language]], ignore..
+[[Dispatcher:]] could not find controller language
+[[Dispatcher:]] couldn't found a valid routing rule or valid controller/method for request: [[language/seta&amp;lt;i&amp;gt;sd/english]] rendering the 404 page
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function
+[[Loader:]] registering autoload functions
+[[Loader:]] loading class [[\Bootstrap\Components\Language]]
+[[Loader:]] loading class [[\Bootstrap\Components\Session]]
+[[Loader:]] loading class [[\Bootstrap\Components\Security]]
+[[Loader:]] loading class [[\Bootstrap\Components\Mail]]
+[[Loader:]] loading class [[\Bootstrap\Components\Encrypt]]
+[[Loader:]] loading class [[\Bootstrap\Components\HTML]]
+[[Session:]] cookie was found, updating the current session
+[[Loader:]] loading class [[\Bootstrap\Dispatcher\Dispatcher]]
+[[Dispatcher:]] loading [[/var/www/verbena/app/config/routes.php]] configuration file
+[[Dispatcher:]] adding route rule for page not found (404) to [[welcome.notfound]]
+[[Dispatcher:]] adding route rule [[/language/set/italian]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/language/set/english]] to [[welcome.language]]
+[[Dispatcher:]] adding route rule [[/eg-anon/with-method]] to anonymous function
+[[Dispatcher:]] adding route rule [[/eg-anon]] to anonymous function
+[[Loader:]] loading class [[\App\Controllers\welcome]]
+[[Loader:]] loading class [[\Bootstrap\Controllers\Controller]]
+[[Loader:]] loading class [[\Bootstrap\Views\View]]
+[[Loader:]] script end with the register shutdown function

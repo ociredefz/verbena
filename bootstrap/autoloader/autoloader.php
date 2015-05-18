@@ -70,8 +70,7 @@ class Autoloader {
                 }
             }
             else {
-                throw new AutoloaderException('cannot redeclare class [[' . $_back_class . ']]. <br>' . 
-                    '[[Missing namespace declaration?!]]');
+                Tracer::add('[[Loader:]] unable to redeclare class [[' . $_back_class . ']], ignore..');
             }
         }
         catch (AutoloaderException $exception) {

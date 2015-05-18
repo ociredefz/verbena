@@ -276,7 +276,7 @@ class Dispatcher {
             if (static::_call_class($_route, $_arguments, false) === false) {
                 // Checks if at least one route was loaded.
                 Tracer::add("[[Dispatcher:]] couldn't found a valid routing rule or valid " . 
-                    "controller/method for request: [[$_request_uri]] rendering the 404 page");
+                    "controller/method for request: [[" . htmlspecialchars($_request_uri) . "]] rendering the 404 page");
 
                 if (!empty(static::$_notfound)) {
                     return static::_call_class(static::$_notfound);
@@ -287,7 +287,7 @@ class Dispatcher {
                 }
             }
             else {
-                Tracer::add("[[Dispatcher:]] no route has found, loading directly the controller/method: [[$_request_uri]]");
+                Tracer::add("[[Dispatcher:]] no route has found, loading directly the controller/method: [[" . htmlspecialchars($_request_uri) . "]]");
             }
         }
         else {
