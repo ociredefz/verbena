@@ -11,7 +11,7 @@
     [% stylesheet app %]
 
     <!-- Links -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="<?! HTML::url('assets/images/favicon.ico') ?>" type="image/x-icon"/>
     <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
     <link rel="canonical" href="http://deftcode.ninja/">
 
