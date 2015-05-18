@@ -1,0 +1,12 @@
+CHANGELOG VERBENA - 2015.1
+--------------------------
+
+2015.1 - 18-05-2015
+
+	Added:
+
+		* Built-in webserver.
+
+	Fixes:
+
+		* Some in-code conditions.

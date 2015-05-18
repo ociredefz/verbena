@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * Interface the command-line calls.
+ *
+ * This start the verbena webserver through the
+ * PHP built-in webserver feature.
+ */
+$app = require __DIR__ . '/bootstrap/interface.php';
+$app->interface_CLI();
