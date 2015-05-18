@@ -21,7 +21,7 @@ Follow this link to see verbena in action: http://verbena.deftcode.ninja
 Bug Report
 ----------
 
-Report bugs at: [eurialo@deftcode.ninja](eurialo@deftcode.ninja)
+Report bugs at [eurialo@deftcode.ninja](eurialo@deftcode.ninja)
 
 Screenshot
 ----------
