@@ -11,7 +11,7 @@
         <div class="spacer s-10"></div>
         <pre class="version"><span class="blue-light">VERBENA</span> <span class="green-light">CURRENT RELEASE:</span> 2015.1</pre>
     
-        <a class="btn light upper follow" href="//github.com/eurialo/verbena" role="button"><?! Language::get('welcome.container-button') ?></a>
+        <a class="btn light upper follow" href="https://github.com/eurialo/verbena" role="button" target="_blank"><?! Language::get('welcome.container-button') ?></a>
     </div>
 </section>
 
