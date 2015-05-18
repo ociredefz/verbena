@@ -13,7 +13,7 @@ $app = [
      * quiet:       set application in quiet-mode (disable the tracer and display only errors).
      * production:  set application in production-mode (nothing).
      */
-    'environment'       => 'development', 
+    'environment'       => 'production', 
 
     /**
      * The base application path.
