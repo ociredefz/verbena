@@ -149,7 +149,6 @@ class Autoloader {
             }
         }
 
-
         return static::$_registered;
 
     }

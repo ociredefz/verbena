@@ -220,9 +220,9 @@
                     <p>In the app configuration file you can <strong>customize</strong> all the base options that are useful to verbena to <strong>set up</strong> 
                         the environment and to <strong>load correctly</strong> the contents that were <strong>generated</strong>.</p>
 
-<pre>'environment'    <span class="blue-light">=></span>  'quiet',
+<pre>'environment'    <span class="blue-light">=></span>  'production',
 
-<small class="info-note-tick"># Note: default value is set to quiet.</small></pre>
+<small class="info-note-tick"># Note: default value is set to production.</small></pre>
 
                     <p>The <strong>environment</strong> option is used to set the <strong>debug depht</strong>, the possible values are listed below:</p>
                     
@@ -1882,11 +1882,11 @@ a private string to be encrypted</pre>
                     <p>This is an example interaction with the MongoDB driver using the $db instance:</p>
 
 <pre><span class="gray">// Get the database instance</span>
-    <span class="blue-light">self</span>::<b>$db</b> = <span class="blue-light">Factory</span>::<b>$db</b>;
+<span class="blue-light">self</span>::<b>$db</b> = <span class="blue-light">Factory</span>::<b>$db</b>;
 
-    <span class="gray">// Return a collection</span>
-    <b>$db_admin</b> = <span class="blue-light">self</span>::<b>$db</b>->admin;
-    <span class="blue-light">return</span> <b>$db_admin</b>->listCollections();
+<span class="gray">// Return a collection</span>
+<b>$db_admin</b> = <span class="blue-light">self</span>::<b>$db</b>->admin;
+<span class="blue-light">return</span> <b>$db_admin</b>->listCollections();
 </pre>
 
                 </div>

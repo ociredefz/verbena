@@ -129,7 +129,7 @@ function init() {
 
         // clearfix
         if (root.offsetHeight <= windowHeight) {
-            var underlay = document.createElement("div"); 	
+            var underlay = document.createElement("div");   
             underlay.style.clear = "both";
             body.appendChild(underlay);
         }
@@ -522,14 +522,14 @@ function pulse(x) {
 var isChrome = /chrome/i.test(window.navigator.userAgent);
 var wheelEvent = null;
 if ("onwheel" in document.createElement("div"))
-	wheelEvent = "wheel";
+    wheelEvent = "wheel";
 else if ("onmousewheel" in document.createElement("div"))
-	wheelEvent = "mousewheel";
+    wheelEvent = "mousewheel";
 
 if (wheelEvent && isChrome) {
-	addEvent(wheelEvent, wheel);
-	addEvent("mousedown", mousedown);
-	addEvent("load", init);
+    addEvent(wheelEvent, wheel);
+    addEvent("mousedown", mousedown);
+    addEvent("load", init);
 }
 
 })();

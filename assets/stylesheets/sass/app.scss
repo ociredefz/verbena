@@ -1,43 +1,43 @@
 @charset "utf-8";
 
 // Variables
-$base-font-family:				Lato, Helvetica;
-$base-font-size:				15px;
-$base-font-weight:				400;
-$base-line-height:				1.5;
-$base-text-color:				#2a2a2a;
-$base-background-color:			#fff;
-$base-margin:					0 0 20px;
+$base-font-family:              Lato, Helvetica;
+$base-font-size:                15px;
+$base-font-weight:              400;
+$base-line-height:              1.5;
+$base-text-color:               #2a2a2a;
+$base-background-color:         #fff;
+$base-margin:                   0 0 20px;
 
-$heading-font-family:			'Lato', sans-serif;
-$heading-line-height:			1.1;
-$heading-text-color:			#2a2a2a;
+$heading-font-family:           'Lato', sans-serif;
+$heading-line-height:           1.1;
+$heading-text-color:            #2a2a2a;
 
-$general-font-weight:			700;
-$small-font-size:				$base-font-size * 0.875;
-$code-font-size:				14px;
+$general-font-weight:           700;
+$small-font-size:               $base-font-size * 0.875;
+$code-font-size:                14px;
 
-$selection-background-color:	#2a2a2a;
-$selection-text-color:			#eaeaea;
+$selection-background-color:    #2a2a2a;
+$selection-text-color:          #eaeaea;
 
-$grey-color:					#828282;
-$grey-color-light:				lighten($grey-color, 40%);
-$grey-color-dark:				darken($grey-color, 25%);
+$grey-color:                    #828282;
+$grey-color-light:              lighten($grey-color, 40%);
+$grey-color-dark:               darken($grey-color, 25%);
 
-$on-phone:						550px;
-$on-palm:						768px;
-$on-tablet:						1124px;
+$on-phone:                      550px;
+$on-palm:                       768px;
+$on-tablet:                     1124px;
 
 // Using media queries
 @mixin media-query($device) {
-	@media screen and (max-width: $device) {
-		@content;
-	}
+    @media screen and (max-width: $device) {
+        @content;
+    }
 }
 
 // Import partials from 'sass'
 @import 
-	'base', 
-	'layout',
-	'icons', 
-	'../../vendor/font-awesome/scss/font-awesome.scss';
+    'base', 
+    'layout',
+    'icons', 
+    '../../vendor/font-awesome/scss/font-awesome.scss';
