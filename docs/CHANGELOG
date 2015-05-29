@@ -1,7 +1,14 @@
 CHANGELOG VERBENA - 2015.1
 --------------------------
 
-2015.1 - 18-05-2015
+2015.1-RC2 - 29-05-2015
+
+	Added:
+
+		* Support to Cross-Origin Resource Sharing (CORS) in security.
+
+
+2015.1-RC1 - 18-05-2015
 
 	Added:
 

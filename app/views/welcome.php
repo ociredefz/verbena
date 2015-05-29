@@ -571,14 +571,37 @@
                     <p>To enable the <strong>HTTP-Strict-Transport-Security</strong> in the response, set it to <strong>boolean true</strong>. <br>
                         <small class="info-note-tick">Note:  HTST enabled requires the HTTPS support in the webserver therefore in the website.</small></p>
 
+                    <p>Another security enhancement is the <strong>Cross-Origin Resource Sharing</strong> (CORS) that is a mechanism that allows <strong>restricted resources</strong> 
+                        (e.g. fonts, javascript, etc.) on a web page to be <strong>requested from another domain</strong> outside the domain from which the resource originated.</p>
+
+<pre>'cross-origin-resource-sharing'            <span class="blue-light">=></span>  [
+    'access-control-allow-origin'       <span class="blue-light">=></span> [
+        'http://verbena.deftcode.ninja'
+    ],
+    'access-control-expose-headers'     <span class="blue-light">=></span> [
+        'X-VERBENA'
+    ],
+    'access-control-max-age'            <span class="blue-light">=></span> [
+        86400
+    ],
+    'access-control-allow-credentials'  <span class="blue-light">=></span> [
+        'true'
+    ],
+    'access-control-allow-methods'      <span class="blue-light">=></span> [
+        'GET', 'POST'
+    ]
+],
+
+<small class="info-note-tick"># Note: the fields above are the default-set.</small></pre>
+
+                    <p>Finally, verbena <strong>allows</strong> you to <strong>enter custom</strong> header <strong>parameters</strong> at your choice that will be 
+                        <strong>included</strong> in each <strong>HTTP response</strong>.</p>
+
 <pre>'custom-headers'    <span class="blue-light">=></span>  [
     'X-VERBENA'     <span class="blue-light">=></span>  '2015.1',
 ]
 
 <small class="info-note-tick"># Note: default value is set to an example verbena version.</small></pre>
-
-                    <p>Finally, verbena <strong>allows</strong> you to <strong>enter custom</strong> header <strong>parameters</strong> at your choice that will be 
-                        <strong>included</strong> in each <strong>HTTP response</strong>.</p>
 
 
 

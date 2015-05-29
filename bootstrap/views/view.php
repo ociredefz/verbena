@@ -126,12 +126,12 @@ class View {
         }
 
         // Check for header response with content-security-policy (CSP).
-        if (Environment::get_env('security.content-security-policy') === true) {
+        if (($_csp = Environment::get_env('security.content-security-policy')) === true) {
 
             // Generate allowed csp endpoints,
             // (based on key/value that are not empties)
             $_allowed = '';
-            foreach (Environment::get_env('security.content-security-policy-allowed') as $_key => $_value) {
+            foreach ($_csp as $_key => $_value) {
                 if (!empty($_value)) {
                     $_allowed .= ' ' . $_key . ' ' . implode(' ', $_value) . ';';
                 }
@@ -151,6 +151,36 @@ class View {
                 // Supported: FF 4, Chrome 4.0.211 and Opera 12.
                 // Remember it for 1 year.
                 header('Strict-Transport-Security: max-age=31536000');
+            }
+        }
+
+        // Check for header response with cross-origin resource sharing (CORS).
+        if (($_cors = Environment::get_env('security.cross-origin-resource-sharing')) !== false) {
+            foreach ($_cors as $_key => $_value) {
+                if (!empty($_value)) {
+                    switch ($_key) {
+                        case 'access-control-allow-origin':
+                            $_field = implode(', ', $_value);
+                            header("Access-Control-Allow-Origin:" . $_field);
+                            break;
+                        case 'access-control-expose-headers':
+                            $_field = implode(', ', $_value);
+                            header("Access-Control-Expose-Headers:" . $_field);
+                            break;
+                        case 'access-control-max-age':
+                            $_field = implode(' ', $_value);
+                            header("Access-Control-Max-Age:" . $_field);
+                            break;
+                        case 'access-control-allow-credentials':
+                            $_field = implode(' ', $_value);
+                            header("Access-Control-Allow-Credentials:" . $_field);
+                            break;
+                        case 'access-control-allow-methods':
+                            $_field = implode(', ', $_value);
+                            header("Access-Control-Allow-Methods:" . $_field);
+                            break;
+                    }
+                }
             }
         }
 
