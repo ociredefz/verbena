@@ -97,11 +97,9 @@ $security = [
         'access-control-allow-origin'       => [
             'http://verbena.deftcode.ninja'
         ],
-        'access-control-expose-headers'     => [
-            'X-VERBENA'
-        ],
+        'access-control-expose-headers'     => [],
         'access-control-max-age'            => [
-            86400
+            10
         ],
         'access-control-allow-credentials'  => [
             'true'

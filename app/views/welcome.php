@@ -578,11 +578,9 @@
     'access-control-allow-origin'       <span class="blue-light">=></span> [
         'http://verbena.deftcode.ninja'
     ],
-    'access-control-expose-headers'     <span class="blue-light">=></span> [
-        'X-VERBENA'
-    ],
+    'access-control-expose-headers'     <span class="blue-light">=></span> [],
     'access-control-max-age'            <span class="blue-light">=></span> [
-        86400
+        10
     ],
     'access-control-allow-credentials'  <span class="blue-light">=></span> [
         'true'
