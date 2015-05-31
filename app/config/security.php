@@ -65,6 +65,7 @@ $security = [
         'script-src'                        => [
             'verbena.local',
             'verbena.deftcode.ninja',
+            'www.google-analytics.com',
             "'unsafe-inline'",
             "'unsafe-eval'"
         ],
