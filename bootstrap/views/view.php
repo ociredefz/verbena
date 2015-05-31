@@ -126,7 +126,8 @@ class View {
         }
 
         // Check for header response with content-security-policy (CSP).
-        if (($_csp = Environment::get_env('security.content-security-policy')) === true) {
+        if (Environment::get_env('security.content-security-policy') === true) {
+            $_csp = Environment::get_env('security.content-security-policy-allowed');
 
             // Generate allowed csp endpoints,
             // (based on key/value that are not empties)
