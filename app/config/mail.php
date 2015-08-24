@@ -51,8 +51,10 @@ $mail = [
      * This is can be changed before sending through 
      * the Mail::add_from(name, address) method.
      */
-    'def_mail_address'  => 'user@example.org',
-    'def_mail_name'     => 'User Name',
+    'def_mail_address'      => 'no-reply@detectlry.com',
+    'def_mail_name'         => 'Detectlry No-Reply',
+    'def_mail_local_name'   => 'Detectlry Local Message',
+    'def_mail_local'        => 'info@detectlry.com',
 
     /**
      * Set to 'true' if intend to send the mail in
