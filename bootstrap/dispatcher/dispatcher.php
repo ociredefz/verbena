@@ -11,8 +11,9 @@ use Bootstrap\Environment\Tracer;
 use Bootstrap\Autoloader\Autoloader;
 use Bootstrap\Database\Factory;
 use Bootstrap\Environment\Environment;
-use Bootstrap\Controllers\Controller;
-use Bootstrap\Views\View;
+use Bootstrap\Components\Security;
+use Bootstrap\Components\Session;
+use Bootstrap\Components\HTTP;
 use Bootstrap\Exceptions\DispatcherException;
 use Bootstrap\Exceptions\ControllerException;
 
@@ -20,12 +21,14 @@ class Dispatcher {
 
     /**
      * Some control variables.
+     * @var array
      */
     protected static $_notfound = [];
     protected static $_routes   = [];
 
     /**
      * Application namespaces.
+     * @var array
      */
     protected static $_app_providers  = [
         'controllers'   => 'App\\Controllers\\',
@@ -34,19 +37,8 @@ class Dispatcher {
     ];
 
     /**
-     * Most known HTTP request types.
-     */
-    const HTTP_REQUEST_GET      = 'GET';
-    const HTTP_REQUEST_POST     = 'POST';
-    /**
-     * Other HTTP request types.
-     * (No yet implemented)
-     */
-    const HTTP_REQUEST_PUT      = 'PUT';
-    const HTTP_REQUEST_DELETE   = 'POST';
-    const HTTP_REQUEST_AJAX     = 'AJAX';
-    /**
      * Miscellanea helpers.
+     * @var const
      */
     const HTTP_SEPARATOR        = '/';
 
@@ -106,12 +98,11 @@ class Dispatcher {
      *
      * @access  public
      * @param   string
-     * @param   mixed
-     * @param   mixed
-     * @param   const
-     * @return void
+     * @param   string
+     * @param   array
+     * @return  void
      */
-    public static function route($_uri, $_controller_method, $_filter = null, $_http_method = self::HTTP_REQUEST_GET) {
+    public static function route($_uri, $_controller_method, $_filter = []) {
 
         // Check for mixed types.
         switch (gettype($_controller_method)) {
@@ -159,8 +150,7 @@ class Dispatcher {
             'uri'           => $_uri,
             'controller'    => $_controller,
             'method'        => $_method,
-            'filter'        => $_filter,
-            'request'       => $_http_method
+            'filter'        => $_filter
         ]);
 
     }
@@ -201,7 +191,7 @@ class Dispatcher {
             }
 
             // Merge arguments if it's a POST request.
-            if ($_request_method === static::HTTP_REQUEST_POST) {
+            if ($_request_method === 'POST') {
                 $_arguments = array_merge($_arguments, $_POST);
             }
 
@@ -209,36 +199,57 @@ class Dispatcher {
                 // Check if it's an ajax request.
                 if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) and !empty($_SERVER['HTTP_X_REQUESTED_WITH']) and 
                     strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-                    // Do something in the future.
+
+                    if ($_request_method === 'POST') {
+                        // Use php input to prevent empty $_POST
+                        // when received a json post data.
+                        // (Its generally handled by AJAX requests)
+                        $json_stream = (array) json_decode(file_get_contents('php://input'));
+
+                        // Merge POST fields. 
+                        if (!empty($json_stream)) {
+                            $_POST = array_merge($_POST, $json_stream);
+                        }
+                    }
                 }
 
-                // Find the HTTP request type.
-                if (strpos($_route['request'], $_request_method) !== false) {
+                // Standardize router uri to request uri.
+                $_back_uri = $_route['uri'];
+                $_route['uri'] = ltrim(rtrim($_route['uri'], 
+                    static::HTTP_SEPARATOR), static::HTTP_SEPARATOR);
 
-                    // Standardize router uri to request uri.
-                    $_back_uri = $_route['uri'];
-                    $_route['uri'] = ltrim(rtrim($_route['uri'], 
-                        static::HTTP_SEPARATOR), static::HTTP_SEPARATOR);
+                // Explode first controller/method of router rule, if there 
+                // are fewer than two value returned by explode, it append 
+                // null value to the method variable.
+                list($_route_controller, $_route_method) = 
+                    array_pad(explode(static::HTTP_SEPARATOR, $_route['uri']), 2, null);
 
-                    // Explode first controller/method of router rule, if there 
-                    // are fewer than two value returned by explode, it append 
-                    // null value to the method variable.
-                    list($_route_controller, $_route_method) = 
-                        array_pad(explode(static::HTTP_SEPARATOR, $_route['uri']), 2, null);
+                // Compare the controller and method.
+                if ($_request_uri_controller === $_route_controller) {
+                    if (is_null($_route_method) and !is_null($_request_uri_method)) {
+                        $_anon_function = true;
+                    }
+                    else {
+                        if ($_request_uri_method === $_route_method) {
+                            Environment::set_env('called_method', $_route_method);
+                            Tracer::add("[[Dispatcher:]] founds a route rule with controller/method: [[{$_back_uri}]]");
 
-                    // Compare the controller and method.
-                    if ($_request_uri_controller === $_route_controller) {
-                        if (is_null($_route_method) and !is_null($_request_uri_method)) {
-                            $_anon_function = true;
-                        }
-                        else {
-                            if ($_request_uri_method === $_route_method) {
-                                Tracer::add("[[Dispatcher:]] founds a route rule with controller/method: [[{$_back_uri}]]");
+                            // Manage the arguments list by HTTP requests.
+                            // (Its generally handled by AJAX requests)
+                            if ($_request_method == 'POST') {
 
-                                // Create the controller instance.
-                                array_shift($_arguments);
-                                return static::_call_class($_route, $_arguments);
+                                // Shift only if method is set.
+                                if (isset($_arguments[1])) {
+                                    array_shift($_arguments);
+                                }
                             }
+                            // Shift for other requests.
+                            else {
+                                array_shift($_arguments);
+                            }
+
+                            // Create the controller instance.
+                            return static::_call_class($_route, $_arguments);
                         }
                     }
                 }
@@ -335,7 +346,7 @@ class Dispatcher {
 
     /**
      * Return the HTTP request method.
-     * Available methods are: GET, POST, PUT, DELETE, AJAX.
+     * (HTTP verbs: GET, POST, PUT, DELETE, ..)
      *
      * @access  private
      * @param   void
@@ -377,6 +388,7 @@ class Dispatcher {
 
         // Return to anonymous function.
         if (is_null($_route['controller'])) {
+            echo 'lol';exit;
             return call_user_func_array($_route['method'], $_arguments);
         }
         else {
@@ -386,9 +398,41 @@ class Dispatcher {
 
             // Check existence of class name.
             if (class_exists($_class)) {
+
                 // Try to instantiate the class.
                 $_controller = $_class::instance_class();
                 $_method = $_route['method'];
+
+                // Check for router filter.
+                if (isset($_route['filter']) and !is_null($_route['filter']) and !empty($_route['filter'])) {
+
+                    // Verify authorized session field to access the controller method,
+                    // if it's false redirect to custom page only if the method is not allowed.
+                    if (isset($_route['filter']['auth_session']) and isset($_route['filter']['noauth_redirect'])) {
+                        
+                        // Requested session to proceed is not set.
+                        // First check if it's a valid authentication session name.
+                        if ($_route['filter']['auth_session'] !== false) {
+                            if (Session::get($_route['filter']['auth_session']) === false) {
+
+                                // Check if method is already allowed in the case
+                                // the authorization session is needed.
+                                if (!isset($_route['filter']['noauth_allowed'])) {
+                                    return HTTP::redirect($_route['filter']['noauth_redirect']);
+                                }
+                            }
+                            // If the requested session is set to false, it means that the
+                            // page become not available for the authorized clients.
+                            else {
+                                if (isset($_route['filter']['noauth_allowed'])) {
+                                    if ($_route['filter']['noauth_allowed'] === false) {
+                                        return HTTP::redirect($_route['filter']['noauth_redirect']);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
 
                 try {
                     // Try to call the class method.

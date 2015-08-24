@@ -14,6 +14,10 @@ use Bootstrap\Exceptions\DatabaseException;
 
 class MongoDB_Driver extends MongoClient {
 
+    /**
+     * Database variables.
+     * @var object|string
+     */
     protected static $_statement;
     protected static $_error;
 

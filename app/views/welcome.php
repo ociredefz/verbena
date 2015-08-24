@@ -9,9 +9,11 @@
         <p><?! Language::get('welcome.container-message') ?></p>
         <p><?! Language::get('welcome.container-message-sub') ?></p>
         <div class="spacer s-10"></div>
-        <pre class="version"><span class="blue-light">VERBENA</span> <span class="green-light">CURRENT RELEASE:</span> 2015.1-RC2</pre>
-    
-        <a class="btn light upper follow" href="https://github.com/eurialo/verbena" role="button" target="_blank"><?! Language::get('welcome.container-button') ?></a>
+        <pre class="version"><span class="blue-light">VERBENA</span> <span class="green-light">CURRENT RELEASE:</span> 2015.1-RC3</pre>
+        <div class="version"><strong>NOTE:</strong> The following documentantion have not been updated with the recent changes.</div>
+
+        <div class="centered-add-info"><a href="https://github.com/eurialo/verbena/blob/master/docs/CHANGELOG" target="_blank">Follow the Changelog in Github.</a></div>
+        <div class="centered-add-info"><a class="btn light upper follow" href="https://github.com/eurialo/verbena" role="button" target="_blank"><?! Language::get('welcome.container-button') ?></a></div>
     </div>
 </section>
 
@@ -96,6 +98,7 @@
                             <li><a href="#class-factory">Factory Class</a></li>
                             <li><a href="#driver-instance">The <span class="green-light">$db</span> instance</a></li>
                             <li><a href="#driver-mongodb">MongoDB interaction</a></li>
+                            <li><a href="#chaining-methods">Chaining Methods</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -1908,6 +1911,54 @@ a private string to be encrypted</pre>
 <span class="gray">// Return a collection</span>
 <b>$db_admin</b> = <span class="blue-light">self</span>::<b>$db</b>->admin;
 <span class="blue-light">return</span> <b>$db_admin</b>->listCollections();
+</pre>
+
+
+
+                    <!-- MongoDB Class -->
+                    <a name="chaining-methods">
+                        <h4 class="info-sub-thing info-tick">Chaining Methods</h4>
+                    </a>
+
+                    <p>Example usage:</p>
+
+<pre><span class="gray">// Database insert</span>
+<b>$return</b> = <span class="blue-light">Factory</span>::table('users')->insert([
+    'username'  => 'eurialo',
+    'email'     => 'eurialo@deftcode.ninja',
+    'status'    => 0,
+    'created'   => date('Y-m-d H:i:s'),
+    'group_id'  => 1
+]);
+
+<span class="gray">// Database update</span>
+<b>$return</b> = <span class="blue-light">Factory</span>::table('users')->where([
+    'id'        => 1,
+    'username'  => 'eurialo'
+])->update([
+    'email'     => 'eurialo@example.org',
+    'status'    => 1
+]);
+
+<span class="gray">// Database delete</span>
+<b>$return</b> = <span class="blue-light">Factory</span>::table('users')->where([
+    'id'        => 2,
+    'username'  => 'eurialo123'
+])->delete();
+
+<span class="gray">// Database count</span>
+<b>$return</b> = <span class="blue-light">Factory</span>::table('users')->where([
+    'status'    => 1,
+    'username'  => 'eurialo123'
+])->count();
+
+<span class="gray">// Database select</span>
+<b>$return</b> = <span class="blue-light">Factory</span>::table('users')->select([
+    'username', 'email'
+])->where([
+    'email'     => 'eurialo@example.org',
+    'status'    => 0
+])->first();
 </pre>
 
                 </div>

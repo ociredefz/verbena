@@ -11,6 +11,10 @@ use Bootstrap\Environment\Tracer;
 
 class Environment {
 
+    /**
+     * Environment container.
+     * @var array
+     */
     protected static $_env = [];
 
 
@@ -54,13 +58,19 @@ class Environment {
                 'providers'     => $_abs_path . '/app/config/providers.php',
                 'components'    => $_abs_path . '/app/config/components.php',
                 'security'      => $_abs_path . '/app/config/security.php',
+                'cache'         => $_abs_path . '/app/config/cache.php',
                 'mail'          => $_abs_path . '/app/config/mail.php'
             ],
             'paths'     => [
+                'storage'       => $_abs_path . '/app/storage/',
+                'cache'         => $_abs_path . '/app/storage/cache/',
                 'language'      => $_abs_path . '/app/language/',
                 'views'         => $_abs_path . '/app/views/',
                 'includes'      => $_abs_path . '/app/views/includes/',
-                'layouts'       => $_abs_path . '/app/views/layouts/'
+                'layouts'       => $_abs_path . '/app/views/layouts/',
+                'mail'          => $_abs_path . '/app/views/mail/',
+                'libraries'     => $_abs_path . '/app/libraries/',
+                'thirdparty'    => $_abs_path . '/app/thirdparty/'
             ]
         ];
 
@@ -84,6 +94,9 @@ class Environment {
 
         // Load the security configuration file.
         static::_load_file($_data['config']['security'], 'security');
+
+        // Load the cache configuration file.
+        static::_load_file($_data['config']['cache'], 'cache');
 
         // Load the mail configuration file.
         static::_load_file($_data['config']['mail'], 'mail');
@@ -142,15 +155,22 @@ class Environment {
     }
 
     /**
-     * Get the absolute base path variable.
+     * Load thirdparty extension/library.
      *
      * @access  public
-     * @param   void
-     * @return  string
+     * @param   string
+     * @param   string
+     * @return  bool
      */
-    public static function get_abs_path() {
+    public static function load_library($_path, $_name) {
 
-        return static::get_env('abs');
+        // Generate full path for dirname() call.
+        $_full_file = static::get_env('paths.libraries') . $_path . '/' . $_name . '.php';
+        
+        // Avoid local/remote file inclusion.
+        if (dirname($_full_file) === static::get_env('paths.libraries') . $_path) {
+            @include_once($_full_file);
+        }
 
     }
 
@@ -204,14 +224,36 @@ class Environment {
      * @param   string
      * @return  bool
      */
-    public static function set_env($_key, $_value) {
+    public static function set_env($_key, $_value, $_load_file = null) {
 
-        if (static::$_env[$_key] = $_value) {
-            return true;
+        // Retrieve environment variable.
+        if (is_null($_load_file)) {
+            if (static::$_env[$_key] = $_value) {
+                return true;
+            }
+        }
+        // Set a new environment variable.
+        // (Return its value)
+        else {
+            static::_load_file(static::get_abs_path() . '/app/config/' . $_key . '.php', $_key);
+            return static::$_env[$_key];
         }
 
     }
 
+    /**
+     * Get the absolute base path variable.
+     *
+     * @access  public
+     * @param   void
+     * @return  string
+     */
+    public static function get_abs_path() {
+
+        return static::get_env('abs');
+
+    }
+    
     /**
      * Get local domain name.
      *
@@ -247,6 +289,11 @@ class Environment {
 
         $_protocol = 'http' . ((isset($_SERVER['HTTPS']) and $_SERVER['HTTPS'] === 'on') ? 's' : '') . '://';
         $_url = $_protocol . $_SERVER['HTTP_HOST'] . $_path_base;
+
+        // Remove the last slash.
+        if (substr($_url, -1) == '/') {
+            $_url = substr($_url, 0, -1);
+        }
 
         return $_url;
 

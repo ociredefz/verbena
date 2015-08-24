@@ -12,6 +12,10 @@ use Bootstrap\Exceptions\ModelException;
 
 class Model {
 
+    /**
+     * Instances container.
+     * @var array
+     */
     protected static $_instances = [];
 
 

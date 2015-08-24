@@ -40,6 +40,7 @@ $app = [
     /**
      * Enable the compression of the HTML code.
      * This removes the white-spaces also in the pre/code tags.
+     * Note: could generate a conflict with the javascript code.
      */
     'compress_output'   => false,
 

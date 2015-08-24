@@ -65,6 +65,13 @@ $database = [
             'password'          => '',
             'connectTimeoutMS'  => -1
         ]
+    ],
+
+    /**
+     * Tables list.
+     */
+    'tables'        => [
+        'example_tbl'   => 'example__table',
     ]
 
 ];

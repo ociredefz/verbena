@@ -14,6 +14,10 @@ use Bootstrap\Exceptions\ControllerException;
 
 class Controller {
 
+    /**
+     * Instances container.
+     * @var object
+     */
     protected static $_instances = [];
 
 
@@ -40,18 +44,18 @@ class Controller {
      * Get the name of the current called method.
      *
      * @access  public
-     * @param   const
+     * @param   void
      * @return  string
      */
-    public static function get_current_method($_method) {
+    public static function get_current_called_method() {
 
-        // Remove the 'index' word from string 
-        // if it exists in method value.
-        if (strpos($_method, 'index') !== false) {
-            $_method = str_replace('index', '', $_method);
-        }
+        $_traces = debug_backtrace();
 
-        return @end(explode('::', $_method));
+        if (isset($_traces[3]['args'][0]['method'])) {
+            return $_traces[3]['args'][0]['method']; 
+        } 
+
+        return null; 
 
     }
 

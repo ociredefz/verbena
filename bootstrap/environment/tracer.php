@@ -20,7 +20,7 @@ class Tracer {
      * @param   string
      * @return  const
      */
-    public static function add($message) {
+    public static function add($_message) {
 
         $_puts = ['onfile' => false, 'onscreen' => false];
 
@@ -53,17 +53,21 @@ class Tracer {
         if ($_puts['onfile'] === true) {
             
             // Put the message in the file log.
-            if (file_put_contents(Environment::get_env('abs') . '/app/storage/app.log', $message . "\n", FILE_APPEND | LOCK_EX) === false) {
+            if (file_put_contents(Environment::get_env('abs') . '/app/storage/app.log', $_message . "\n", FILE_APPEND | LOCK_EX) === false) {
                 throw new Exception('Error: unable to write to the log file');
             }
 
             // Put message on a video.
             // This is useful to display the stack-traces.
             if ($_puts['onscreen'] === true) {
-                $message = str_replace('[[', '<strong>', $message);
-                $message = str_replace(']]', '</strong>', $message);
+                $_message = str_replace('[[', '<strong>', $_message);
+                $_message = str_replace(']]', '</strong>', $_message);
                 
-                echo '<code class="debug-line">' . $message . '</code>';
+                // Enable output buffering that prevent header warning like:
+                // Warning: Cannot modify header information - headers already sent by..
+                ob_start();
+                echo '<code class="debug-line">' . $_message . '</code>';
+                ob_flush();
             }
         }
 

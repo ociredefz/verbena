@@ -11,6 +11,10 @@ use Exception;
 
 class HTMLException extends Exception {
 
+    /**
+     * Exception variables.
+     * @var string|integer
+     */
     protected $message = 'Unknown exception';   // Exception message
     private   $string;                          // Unknown
     protected $code = 0;                        // User-defined exception code

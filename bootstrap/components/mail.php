@@ -15,6 +15,7 @@ class Mail {
 
     /**
      * Available integreated drivers.
+     * @var array
      */
     protected static $_drivers  = [
         'smtp', 'mail'
@@ -23,21 +24,15 @@ class Mail {
     /**
      * Environment configuration and 
      * error control variables.
+     * @var array
      */
-    protected static $_env_mail = [];
-    protected static $_error    = '';
-
-    /**
-     * Server related parameters.
-     */
-    public static $hostname     = null;
-    public static $port         = null;
-    public static $timeout      = null;
-    public static $username     = null;
-    public static $password     = null;
+    protected static $_env_mail     = [];
+    protected static $_errors       = [];
+    protected static $_path_mail;
 
     /**
      * Sender/Recipient parameters.
+     * @var string|array
      */
     public static $from_address = null;
     public static $from_name    = null;
@@ -45,19 +40,22 @@ class Mail {
 
     /**
      * Message parameters.
+     * @var string
      */
     public static $subject      = null;
     public static $message      = null;
 
     /**
-     * CRLF carriage return, newline.
+     * Miscellanea variables.
+     * @var string|integer
      */
     const CRLF                  = "\r\n";
     const BUFFER_SIZE           = 512;
+    const FILE_EXTENSION        = '.php';
 
 
     /**
-     * Add sender name and address.
+     * Add sender name and address (optional).
      *
      * @access  public
      * @param   string
@@ -69,15 +67,16 @@ class Mail {
         // Check for non-empty data and
         // valid mail address.
         if (is_null($_from_name) or is_null($_from_address) or
-            empty($_from_name) or empty($_from_address) or
             !filter_var($_from_address, FILTER_VALIDATE_EMAIL)) {
             
-            static::$_error = 'Error: Invalid sender name or mail address.';
-            return false;
+            static::$_errors[] = 'Error: Invalid sender name or mail address.';
+        }
+        else {
+            static::$from_name = $_from_name;
+            static::$from_address = $_from_address;
         }
 
-        static::$from_name = $_from_name;
-        static::$from_address = $_from_address;
+        return new static;
 
     }
 
@@ -103,22 +102,22 @@ class Mail {
                 // an error instead of continue.
                 else {
                     static::$recipients = [];
-                    static::$_error = 'Error: One of your recipient addresses is invalid.';
-                    return false;
+                    static::$_errors[] = 'Error: One of your recipient addresses is invalid.';
                 }
             }
         }
         // Perform same checks as above.
         else {
-            if (filter_var($_recipients, FILTER_VALIDATE_EMAIL)) {
+            if (strlen($_recipients) and filter_var($_recipients, FILTER_VALIDATE_EMAIL)) {
                 static::$recipients[] = $_recipients;
             }
             else {
                 static::$recipients = [];
-                static::$_error = 'Error: Invalid recipient mail address.';
-                return false;
+                static::$_errors[] = 'Error: Invalid recipient mail address.';
             }
         }
+
+        return new static;
 
     }
 
@@ -133,11 +132,13 @@ class Mail {
 
         // Check for valid data.
         if (is_null($_subject) or empty($_subject)) {
-            static::$_error = 'Error: Invalid message subject.';
-            return false;
+            static::$_errors[] = 'Error: Invalid message subject.';
         }
-        
-        static::$subject = $_subject;
+        else {
+            static::$subject = $_subject;
+        }
+
+        return new static;
 
     }
 
@@ -152,26 +153,65 @@ class Mail {
 
         // Check for valid data.
         if (is_null($_message) or empty($_message)) {
-            static::$_error = 'Error: Invalid message body.';
-            return false;
+            static::$_errors[] = 'Error: Invalid message body.';
         }
-        
         // Wordwrap of the message, if any of 
         // lines is larger than 70 characters.
-        static::$message = wordwrap($_message, 70, static::CRLF);
+        else {
+            static::$message = wordwrap($_message, 70, static::CRLF);
+        }
+
+        return new static;
 
     }
 
     /**
-     * Get the error code/message.
+     * Use a template instead of custom message.
      *
      * @access  public
-     * @param   void
-     * @return  array
+     * @param   string
+     * @param   array
+     * @return  void
      */
-    public static function get_error() {
+    public static function add_layout($_template = null, $_data = []) {
 
-        return static::$_error;
+        static::$_path_mail = Environment::get_env('paths.mail');
+
+        // Check for valid data.
+        if (is_null($_template) or empty($_template)) {
+            static::$_errors[] = 'Error: Invalid mail template.';
+            return new static;
+        }
+
+        try {
+            // Load the mail template file.
+            if (($_view_layout = file_get_contents(static::$_path_mail . $_template . static::FILE_EXTENSION)) === false) {
+                throw new MailException('unable to open mail template file: ' . static::$_path_mail . $_template . static::FILE_EXTENSION);
+            }
+        }
+        catch (MailException $exception) {
+            Tracer::add($exception->get_formatted_exception());
+            echo $exception->get_formatted_exception();
+        }
+
+        // Turn on output buffering. extract the variables
+        // from the array, then evaluates the html code 
+        // (and nested php if exists), return the buffered
+        // output and finally turn off output buffering.
+        ob_start();
+
+        extract($_data);
+        echo eval('?>' . preg_replace("/;*\s*\?>/", "; ?>", str_replace('<?!', '<?php echo ', $_view_layout)));
+
+        $_content = ob_get_contents();
+
+        ob_end_clean();
+
+        // This will override the custom message
+        // (Mail::add_message()) if exists.
+        static::$message = $_content;
+
+        return new static;
 
     }
 
@@ -188,7 +228,9 @@ class Mail {
         static::$_env_mail = Environment::get_env('mail');
 
         // Validate mail parameters.
-        static::_validate_parameters();
+        if (static::_validate_parameters() === false) {
+            return false;
+        }
 
         // Check if selected driver is supported.
         try {
@@ -200,13 +242,6 @@ class Mail {
         catch (MailException $exception) {
             echo $exception->get_formatted_exception();
             return false;
-        }
-
-        // Set the sender data from the environment setting
-        // (if no Mail::add_from() method has been call).
-        if (is_null(static::$from_address) or is_null(static::$from_name)) {
-            static::$from_address   = static::$_env_mail['def_mail_address'];
-            static::$from_name      = static::$_env_mail['def_mail_name'];
         }
 
         // Add the 'MIME-Version' and 'Content-Type'
@@ -238,18 +273,18 @@ class Mail {
 
         // Use SMTP driver.
         if (static::$_env_mail['driver'] === 'smtp') {
-            $_socket = fsockopen(static::$hostname, static::$port, $errno, $errstr, static::$timeout);
+            $_socket = fsockopen(static::$_env_mail['hostname'], static::$_env_mail['port'], $errno, $errstr, static::$_env_mail['timeout']);
             
             if (($_response = static::_parse_response($_socket, '220')) === false) {
-                static::$_error = '(0x01) Error: ' . $_response;
+                static::$_errors[] = '(0x01) Error: ' . $_response;
                 return false;
             }
 
             // Say hello to SMTP server.
-            fwrite($_socket, 'EHLO ' . static::$hostname . static::CRLF);
+            fwrite($_socket, 'EHLO ' . static::$_env_mail['hostname'] . static::CRLF);
 
             if (($_response = static::_parse_response($_socket, '250')) !== true) {
-                static::$_error = '(0x02) Error: ' . $_response;
+                static::$_errors[] = '(0x02) Error: ' . $_response;
                 return false;
             }
 
@@ -258,15 +293,15 @@ class Mail {
                 fwrite($_socket, 'AUTH LOGIN' . static::CRLF);
 
                 if (($_response = static::_parse_response($_socket, '334')) !== true) {
-                    static::$_error = '(0x03) Error: ' . $_response;
+                    static::$_errors[] = '(0x03) Error: ' . $_response;
                 }
                 else {
-                    fwrite($_socket, base64_encode(static::$username) . static::CRLF);
+                    fwrite($_socket, base64_encode(static::$_env_mail['username']) . static::CRLF);
                     static::_parse_response($_socket, '334');
                     
-                    fwrite($_socket, base64_encode(static::$password) . static::CRLF);
+                    fwrite($_socket, base64_encode(static::$_env_mail['password']) . static::CRLF);
                     if (($_response = static::_parse_response($_socket, '235')) !== true) {
-                        static::$_error = '(0x04) Error: ' . $_response;
+                        static::$_errors[] = '(0x04) Error: ' . $_response;
                         return false;
                     }
                 }
@@ -275,7 +310,7 @@ class Mail {
             fwrite($_socket, 'MAIL FROM:  <' . static::$from_address . '>' . static::CRLF);
 
             if (($_response = static::_parse_response($_socket, '250')) !== true) {
-                static::$_error = '(0x05) Error: ' . $_response;
+                static::$_errors[] = '(0x05) Error: ' . $_response;
                 return false;
             }
 
@@ -285,7 +320,7 @@ class Mail {
                 fwrite($_socket, 'RCPT TO: <' . $_value . '>' . static::CRLF);
 
                 if (($_response = static::_parse_response($_socket, '250')) !== true) {
-                    static::$_error = '(0x06) Error: ' . $_response;
+                    static::$_errors[] = '(0x06) Error: ' . $_response;
                     return false;
                 }
 
@@ -295,7 +330,7 @@ class Mail {
             // Initialize the send message data.
             fwrite($_socket, 'DATA' . static::CRLF);
             if (($_response = static::_parse_response($_socket, '354')) !== true) {
-                static::$_error = '(0x07) Error: ' . $_response;
+                static::$_errors[] = '(0x07) Error: ' . $_response;
                 return false;
             }
 
@@ -314,7 +349,7 @@ class Mail {
             // Say the goodbye to the SMTP server.
             fwrite($_socket, 'QUIT' . static::CRLF);
             if (($_response = static::_parse_response($_socket, '250')) !== true) {
-                static::$_error = '(0x08) Error: ' . $_response;
+                static::$_errors[] = '(0x08) Error: ' . $_response;
                 return false;
             }
 
@@ -324,10 +359,10 @@ class Mail {
         }
         // Use PHP mail() driver.
         elseif (static::$_env_mail['driver'] === 'mail') {
-            ini_set('smtp_server', static::$hostname);
-            ini_set('smtp_port', static::$port);
-            ini_set('auth_username', static::$username);
-            ini_set('auth_password', static::$password);
+            ini_set('smtp_server',   static::$_env_mail['hostname']);
+            ini_set('smtp_port',     static::$_env_mail['port']);
+            ini_set('auth_username', static::$_env_mail['username']);
+            ini_set('auth_password', static::$_env_mail['password']);
 
             // Add the recipients.
             $_temp_recipients = '';
@@ -361,51 +396,17 @@ class Mail {
      */
     private static function _validate_parameters() {
 
-        // Check the SMTP parameters.
-        foreach (get_class_vars(get_class()) as $_key => $_value) {
+        // Set the sender data from the environment setting.
+        // (if no Mail::add_from() method has been call)
+        if (is_null(static::$from_address) or is_null(static::$from_name)) {
+            static::$from_address = static::$_env_mail['def_mail_address'];
+            static::$from_name    = static::$_env_mail['def_mail_name'];
+        }
 
-            // Check the recipients list.
-            if (is_array(static::${$_key}) and $_key == 'recipients') {
-                try {
-                    if (empty(static::${$_key})) {
-                        Tracer::add('[[Mail:]] invalid [[' . $_key . ']] setting parameter');
-                        throw new MailException('invalid [[' . $_key . ']] setting parameter');
-                    }
-                }
-                catch (MailException $exception) {
-                    echo $exception->get_formatted_exception();
-                    return false;
-                }
-            }
-
-            // Check the other parameters.
-            if (is_null(static::${$_key})) {
-                // Check for a value in environment array-data.
-                try {
-                    if (isset(static::$_env_mail[$_key])) {
-                        static::${$_key} = static::$_env_mail[$_key];
-
-                        try {
-                            if (is_null(static::${$_key})) {
-                                Tracer::add('[[Mail:]] invalid [[' . $_key . ']] setting parameter');
-                                throw new MailException('invalid [[' . $_key . ']] setting parameter');
-                            }
-                        }
-                        catch (MailException $exception) {
-                            echo $exception->get_formatted_exception();
-                            return false;
-                        }
-                    }
-                    else {
-                        Tracer::add('[[Mail:]] invalid [[' . $_key . ']] setting parameter');
-                        throw new MailException('invalid [[' . $_key . ']] setting parameter');
-                    }
-                }
-                catch (MailException $exception) {
-                    echo $exception->get_formatted_exception();
-                    return false;
-                }
-            }
+        // Check for needed variables.
+        if (!empty(static::$_errors) or empty(static::$recipients) or 
+            is_null(static::$subject) or is_null(static::$message)) {
+            return false;
         }
 
         return true;
@@ -440,6 +441,23 @@ class Mail {
 
         return $_response;
     
+    }
+
+    /**
+     * Get the error code/message.
+     *
+     * @access  public
+     * @param   void
+     * @return  array
+     */
+    public static function errors_mail() {
+
+        if (!empty(static::$_errors)) {
+            return static::$_errors;
+        }
+
+        return [];
+
     }
 
     /**

@@ -13,6 +13,10 @@ use Bootstrap\Exceptions\AutoloaderException;
 
 class Autoloader {
 
+    /**
+     * Registered flag.
+     * @var bool
+     */
     protected static $_registered = false;
 
 

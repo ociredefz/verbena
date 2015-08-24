@@ -16,6 +16,10 @@ use Bootstrap\Exceptions\DatabaseException;
 
 class PDO_Driver extends PDO {
 
+    /**
+     * Database variables.
+     * @var object|string
+     */
     protected static $_statement;
     protected static $_error = null;
 
@@ -178,9 +182,13 @@ class PDO_Driver extends PDO {
      * @param   void
      * @return  bool
      */
-    public function execute() {
+    public function execute($_params = []) {
 
         static::$_error = null;
+
+        if (!empty($_params) and !is_null($_params)) {
+            return static::$_statement->execute($_params);
+        }
 
         return static::$_statement->execute();
 

@@ -110,7 +110,7 @@ $security = [
         ]
     ],
     'custom-headers'                            => [
-        'X-VERBENA'                         => '2015.1-RC2',
+        'X-VERBENA'                         => '2015.1-RC3',
     ]
 
 ];

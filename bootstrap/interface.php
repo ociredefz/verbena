@@ -9,10 +9,15 @@ define('APP_PID_FILE', 'app/storage/verbera.run');
 
 class V_Interface {
 
+    /**
+     * Arguments.
+     * @var protected
+     */
     protected static $_argv;
 
     /**
      * Default bind arguments.
+     * @var string|integer
      */
     protected static $_address  = 'localhost';
     protected static $_port     = 8000;

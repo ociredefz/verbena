@@ -14,6 +14,10 @@ use Bootstrap\Exceptions\SessionException;
 
 class Session {
 
+    /**
+     * Session variables.
+     * @var array
+     */
     protected static $_env_session  = [];
     protected static $_session_data = [];
 
@@ -266,6 +270,23 @@ class Session {
         }
 
         return static::$_session_data[$_key];
+
+    }
+
+    /**
+     * Remove old unused csrf tokens.
+     *
+     * @access  public
+     * @param   void
+     * @return  mixed
+     */
+    public static function unset_csrf_tokens() {
+
+        foreach (static::$_session_data as $key => $value) {
+            if (strpos($key, 'csrf-token-name') !== false) {
+                static::uset($key);
+            }
+        }
 
     }
 

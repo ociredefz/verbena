@@ -8,7 +8,7 @@
 return [
 
     /**
-     * Language lines.
+     * Application language lines.
      */
     'title'                 => 'VERBENA - A LIGHTWEIGHT FRAMEWORK',
     'site-name'             => 'VERBENA',

@@ -9,22 +9,34 @@ namespace Bootstrap\Views;
 
 use Bootstrap\Environment\Tracer;
 use Bootstrap\Environment\Environment;
+use Bootstrap\Components\Language;
+use Bootstrap\Components\Session;
+use Bootstrap\Components\Security;
 use Bootstrap\Exceptions\ViewException;
 
 class View {
 
     /**
      * View file extensions.
+     * @var const
      */
     const FILE_EXTENSION        = '.php';
     const FILE_INC_EXTENSION    = '.inc';
     /**
      * The directive pattern.
+     * @var const
      */
     const PATTERN_DIRECTIVE     = '/(\[%(.*)%])/';
 
     /**
+     * Errors container.
+     * @var array
+     */
+    public static $errors = [];
+
+    /**
      * Absolute view paths.
+     * @var string
      */
     protected static $_path_base;
     protected static $_path_assets;
@@ -34,6 +46,7 @@ class View {
 
     /**
      * Temporary buffer.
+     * @var string
      */
     protected static $_buffer;
 
@@ -93,23 +106,6 @@ class View {
         }
         while (preg_match(static::PATTERN_DIRECTIVE, $_view_layout));
 
-        // Turn on output buffering. extract the variables
-        // from the array, then evaluates the html code 
-        // (and nested php if exists), return the buffered
-        // output and finally turn off output buffering.
-        ob_start();
-
-        extract($_data);
-        echo eval('?>'.preg_replace("/;*\s*\?>/", "; ?>", str_replace('<?!', '<?php echo ', $_view_layout)));
-        $_content = ob_get_contents();
-
-        ob_end_clean();
-
-        // Return or render the evaluated code.
-        if (!is_null($_return)) {
-            return $_content;
-        }
-
         // Check for header response with x-powered-by.
         if (Environment::get_env('security.x-powered-by') === false) {
             if (function_exists('header_remove')) {
@@ -129,8 +125,8 @@ class View {
         if (Environment::get_env('security.content-security-policy') === true) {
             $_csp = Environment::get_env('security.content-security-policy-allowed');
 
-            // Generate allowed csp endpoints,
-            // (based on key/value that are not empties)
+            // Generate allowed csp endpoints.
+            // (Based on key/value that are not empties)
             $_allowed = '';
             foreach ($_csp as $_key => $_value) {
                 if (!empty($_value)) {
@@ -194,6 +190,36 @@ class View {
             }
         }
 
+        // Set error control variable if at least 
+        // one error was found and merge with existing 
+        // errors that was setted from the controller.
+        if (!isset($_data['errors'])) {
+            $_data['errors'] = [];
+        }
+        
+        $_data['errors'] = array_merge($_data['errors'], static::$errors);
+        
+        // Turn on output buffering. extract the variables
+        // from the array, then evaluates the html code 
+        // (and nested php if exists), return the buffered
+        // output and finally turn off output buffering.
+        ob_start();
+
+        extract($_data);
+        echo eval('?>' . preg_replace("/;*\s*\?>/", "; ?>", str_replace('<?!', '<?php echo ', $_view_layout)));
+
+        $_content = ob_get_contents();
+
+        ob_end_clean();
+
+        // Inject the CSRF token to all forms.
+        $_content = Security::csrfguard_inject($_content);
+        
+        // Return or render the evaluated code.
+        if (!is_null($_return)) {
+            return $_content;
+        }
+
         // Check for compress-output setting before echo data.
         if (Environment::get_env('app.compress_output') === true) {
             echo static::_compress_data($_content);
@@ -250,11 +276,11 @@ class View {
                 break;
             case 'stylesheet':
                 // Load the stylesheet.
-                $_matches[2] = '<link rel="stylesheet" href="' . static::$_path_base . $_path_assets . '/stylesheets/' . $_sub . '.css">';
+                $_matches[2] = '<link rel="stylesheet" href="' . static::$_path_base . $_path_assets . '/stylesheets/' . $_sub . '.css?' . time() . '">';
                 break;
             case 'javascript':
                 // Load the script.
-                $_matches[2] = '<script src="' . static::$_path_base . $_path_assets . '/javascripts/' . $_sub . '.js"></script>';
+                $_matches[2] = '<script src="' . static::$_path_base . $_path_assets . '/javascripts/' . $_sub . '.js?' . time() . '"></script>';
                 break;
 
             // Replace the scripts/stylesheets providers.
