@@ -32,8 +32,8 @@ CHANGELOG VERBENA - 2015.1-RC3
           validator of each type of existing fields including IDN domains.
         - Add CSRF security component injector and validator for generic
           application/x-www-form-urlencoded but also for ajax request.
-        - Add libraries and third-party directories.
-        - Add load_library to Environment.
+        - Add libraries and thirdparty directories.
+        - Add load_library to Environment (load both libraries and thirdparties).
         - Add flash message (session feedback messages).
         - Add Database Chaining methods.
 
