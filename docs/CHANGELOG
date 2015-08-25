@@ -43,3 +43,7 @@ CHANGELOG VERBENA - 2015.1-RC3
           file with such key and return the populate fucsed environment table.
         - Change input() and inputs() from HTTP compoenent to field() and fields().
         - Mail class have been rewrited.
+
+    Remove:
+
+        - Request type in the dispatcher.
