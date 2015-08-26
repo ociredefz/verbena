@@ -35,24 +35,6 @@ class Environment {
             exit;
         }
 
-        // Check required php curl extension.
-        if (function_exists('curl_exec') === false) {
-            echo 
-                '<p>The current <strong>PHP Curl Extension</strong> seems <strong>not installed</strong>!<br>' .
-                'You must <strong>install</strong> it in order to use verbena.</p>' .
-                '<p><u>The package name is generally named <strong>php5-curl</strong>.</u></p>';
-            exit;
-        }
-
-        // Check required php intl extension.
-        if (function_exists('idn_to_utf8') === false) {
-            echo 
-                '<p>The current <strong>PHP Intl Extension</strong> seems <strong>not installed</strong>!<br>' .
-                'You must <strong>install</strong> it in order to use verbena.</p>' .
-                '<p><u>The package name is generally named <strong>php5-intl</strong>.</u></p>';
-            exit;
-        }
-
     }
 
     /**
