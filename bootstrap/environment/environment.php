@@ -25,12 +25,31 @@ class Environment {
      */
     public static function requirements() {
 
+        // Check required PHP version.
         if (version_compare(PHP_VERSION, '5.4.0', '<')) {
             echo 
-                '<p>The current <b>PHP</b> (' . PHP_VERSION . ') <b>version</b> is <b>not supported</b>!<br>' .
-                'You must <b>upgrade</b> to a <b>PHP version >= 5.4.0</b> in order to use verbena.</p>' .
+                '<p>The current <strong>PHP</strong> (' . PHP_VERSION . ') <strong>version</strong> is <strong>not supported</strong>!<br>' .
+                'You must <strong>upgrade</strong> to a <strong>PHP version >= 5.4.0</strong> in order to use verbena.</p>' .
                 '<p><u>Note that verbena is a modern framework and it uses some features<br>' .
                 'that were introduced in the recent versions of PHP.</u></p>';
+            exit;
+        }
+
+        // Check required php curl extension.
+        if (function_exists('curl_exec') === false) {
+            echo 
+                '<p>The current <strong>PHP Curl Extension</strong> seems <strong>not installed</strong>!<br>' .
+                'You must <strong>install</strong> it in order to use verbena.</p>' .
+                '<p><u>The package name is generally named <strong>php5-curl</strong>.</u></p>';
+            exit;
+        }
+
+        // Check required php intl extension.
+        if (function_exists('idn_to_utf8') === false) {
+            echo 
+                '<p>The current <strong>PHP Intl Extension</strong> seems <strong>not installed</strong>!<br>' .
+                'You must <strong>install</strong> it in order to use verbena.</p>' .
+                '<p><u>The package name is generally named <strong>php5-intl</strong>.</u></p>';
             exit;
         }
 
