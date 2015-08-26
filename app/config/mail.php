@@ -51,10 +51,10 @@ $mail = [
      * This is can be changed before sending through 
      * the Mail::add_from(name, address) method.
      */
-    'def_mail_address'      => 'no-reply@detectlry.com',
-    'def_mail_name'         => 'Detectlry No-Reply',
-    'def_mail_local_name'   => 'Detectlry Local Message',
-    'def_mail_local'        => 'info@detectlry.com',
+    'def_mail_address'      => 'no-reply@verbena.deftcode.ninja',
+    'def_mail_name'         => 'Verbena No-Reply',
+    'def_mail_local_name'   => 'Verbena Local Message',
+    'def_mail_local'        => 'info@verbena.deftcode.ninja',
 
     /**
      * Set to 'true' if intend to send the mail in
