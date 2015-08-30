@@ -23,8 +23,6 @@ class Security {
 
     /**
      * XSS Mitigation function.
-     * TODO:
-     * - Fix bypass %3c%69%6d%67%2f%73%72%63%3d%31%20%6f%6e%65%72%72%6f%72%3d%61%6c%65%72%74%28%31%29%3e.
      *
      * @access  public
      * @param   string
