@@ -418,17 +418,12 @@
      * @param  {function}   Callback function on custom event.
      * @return {void}
      */
-    var _add_cross_event = function (ptr, event, funct) {
+    var _add_cross_event = function (target, type, callback) {
 
-        if (typeof ptr.addEventListener !== 'undefined') {
-            ptr.addEventListener(event, funct, false);
-        }
-        else if (typeof ptr.attachEvent !== 'undefined') {
-            ptr.attachEvent('on' + event, funct);
-        }
-        else {
-            throw 'Invalid event handler';
-        }
+        var _listener_method = target.addEventListener || target.attachEvent,
+            _event_type      = target.addEventListener ? type : 'on' + type;
+
+        _listener_method(_event_type, callback);
 
     };
 

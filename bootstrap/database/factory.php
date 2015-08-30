@@ -46,6 +46,7 @@ class Factory {
     protected static $_where        = null;
     protected static $_unique       = null;
     protected static $_fields       = null;
+    protected static $_join         = null;
 
     protected static $_logical_opt  = 'AND';
 
@@ -116,6 +117,7 @@ class Factory {
         static::$_where  = 
         static::$_unique = 
         static::$_fields = null;
+        static::$_join   = null;
 
         static::$_logical_opt = 'AND';
 
@@ -134,6 +136,22 @@ class Factory {
     public static function select($_fields = []) {
 
         static::$_fields = $_fields;
+        return new static;
+
+    }
+
+    /**
+     * Join statement method.
+     *
+     * @access  public
+     * @param   array
+     * @return  mixed
+     */
+    public static function join($_fields = [], $_logical_opt = 'AND') {
+
+        static::$_join = $_fields;
+        static::$_logical_opt = $_logical_opt;
+
         return new static;
 
     }
@@ -267,6 +285,7 @@ class Factory {
 
         // Generate the query.
         $_query = 'UPDATE `' . static::$_table . '` SET ' . $_prepare_columns_list . 
+        static::_prepare_join_list() .
         static::_prepare_where_list();
 
         // Add where statements to query if exists.
@@ -301,6 +320,7 @@ class Factory {
 
         // Generate the query.
         $_query = 'DELETE FROM `' . static::$_table . '`' . 
+        static::_prepare_join_list() .
         static::_prepare_where_list();
 
         // Execute the prepare statement.
@@ -330,12 +350,13 @@ class Factory {
         $_prepare_columns_list = '*';
         if (static::$_fields != '*') {
             $_prepare_columns_list = implode(',', array_map(function($_x) {
-                return '`' . $_x . '`';
+                return $_x;
             }, static::$_fields));
         }
 
         // Generate the query.
         $_query = 'SELECT ' . $_prepare_columns_list . '  FROM `' . static::$_table . '`' . 
+        static::_prepare_join_list() .
         static::_prepare_where_list();
 
         // Execute the prepare statement.
@@ -375,6 +396,7 @@ class Factory {
 
         // Generate the query.
         $_query = 'SELECT ' . $_prepare_columns_list . '  FROM `' . static::$_table . '`' . 
+        static::_prepare_join_list() .
         static::_prepare_where_list();
 
         // Execute the prepare statement.
@@ -406,6 +428,7 @@ class Factory {
 
         // Generate the query.
         $_query = 'SELECT COUNT(' . $_what . ') FROM `' . static::$_table . '`' . 
+        static::_prepare_join_list() .
         static::_prepare_where_list();
 
         // Execute the prepare statement.
@@ -435,7 +458,7 @@ class Factory {
         // Add where statements to query if exists.
         if (!is_null(static::$_where) and !empty(static::$_where)) {
 
-            // Enable login operator only if
+            // Enable logical operators only if
             // multiple where fields exists.
             if (count(static::$_where) <= 1) {
                 static::$_logical_opt = '';
@@ -457,6 +480,39 @@ class Factory {
         }
 
         return $_where;
+
+    }
+
+    /**
+     * Generate the join list.
+     *
+     * @access  private
+     * @param   void
+     * @return  string
+     */
+    private static function _prepare_join_list() {
+
+        $_join = '';
+
+        // Add where statements to query if exists.
+        if (!is_null(static::$_join) and !empty(static::$_join)) {
+
+            // Enable logical operators only if
+            // multiple where fields exists.
+            if (count(static::$_join) <= 1) {
+                static::$_logical_opt = '';
+            }
+
+            // Generate columns values for prepare statement.
+            $_prepare_join_list = implode(' ' . static::$_logical_opt . ' ', array_map(function($_x) {
+                return $_x;
+            }, static::$_join[2]));
+
+            // Append where statement.
+            $_join = ' ' . strtoupper(static::$_join[0]) . ' JOIN ' . static::$_join[1] . ' ON ' . $_prepare_join_list;
+        }
+
+        return $_join;
 
     }
 

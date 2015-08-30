@@ -23,12 +23,15 @@ class Security {
 
     /**
      * XSS Mitigation function.
+     * TODO:
+     * - Fix bypass %3c%69%6d%67%2f%73%72%63%3d%31%20%6f%6e%65%72%72%6f%72%3d%61%6c%65%72%74%28%31%29%3e.
      *
      * @access  public
      * @param   string
+     * @param   bool
      * @return  string
      */
-    public static function filter_xss($_data = '') {
+    public static function filter_xss($_data = '', $_paranoid = false) {
 
         // Fix '&entity\n;'.
         $_data = str_replace(array('&amp;','&lt;','&gt;'), array('&amp;amp;','&amp;lt;','&amp;gt;'), $_data);
@@ -58,6 +61,11 @@ class Security {
             $_data = preg_replace('#</*(?:applet|b(?:ase|gsound|link)|embed|frame(?:set)?|i(?:frame|layer)|l(?:ayer|ink)|meta|object|s(?:cript|tyle)|title|xml)[^>]*+>#i', '', $_data);
         }
         while ($_old_data !== $_data);
+
+        // If paranoid mode was set, strip all tags.
+        if ($_paranoid !== false) {
+            $_data = strip_tags($_data);
+        }
 
         return $_data;
     

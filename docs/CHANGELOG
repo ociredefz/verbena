@@ -2,28 +2,14 @@ CHANGELOG VERBENA - 2015.1-RC3
 ------------------------------
 
 
-2015.1-RC1 - 29-05-2015
+2015.1-RC3 25-08-2015 (Updated: 31/08/1988)
 
     Added:
 
-        - Support to Cross-Origin Resource Sharing (CORS) in security.
-
-
-2015.1-RC2 - 18-05-2015
-
-    Added:
-
-        - Built-in webserver.
-
-    Fixes:
-
-        - Some in-code conditions.
-
-
-2015.1-RC3 25-08-2015
-
-    Added:
-
+        - Add required-valid-image, max-image-[width|height] and [max|min]-binary-size 
+          validation supports to the HTTP::validation() method.
+        - Add Factory::join() driver support.
+        - Add a static variable co bootstrap controller for view (Controller::$view).
         - Add filters in the routing roules.
         - Add handle_back_csrf_check() method to Security, to performs side 
           csrf check generally in AJAX request.
@@ -47,3 +33,22 @@ CHANGELOG VERBENA - 2015.1-RC3
     Remove:
 
         - Request type in the dispatcher.
+
+
+2015.1-RC2 - 18-05-2015
+
+    Added:
+
+        - Built-in webserver.
+
+    Fixes:
+
+        - Some in-code conditions.
+
+
+2015.1-RC1 - 29-05-2015
+
+    Added:
+
+        - Support to Cross-Origin Resource Sharing (CORS) in security.
+

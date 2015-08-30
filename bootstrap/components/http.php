@@ -121,12 +121,13 @@ class HTTP {
      * @access  public
      * @param   array
      * @param   array
+     * @param   bool
      * @return  bool
      */
-    public static function validate($_fields = [], $_rules = []) {
+    public static function validate($_fields = [], $_rules = [], $_csrf_check = true) {
 
         // Check for CSRF token.
-        if (Security::csrfguard_check() === false) {
+        if (Security::csrfguard_check() === false and $_csrf_check === true) {
             return false;
         }
 
@@ -151,6 +152,78 @@ class HTTP {
                         case 'required':
                             if (!isset($_fields[$_field]) or empty($_fields[$_field])) {
                                 $_formatted_error = sprintf(Language::get('bootstrap.http-validation-required'), $_field);
+                            }
+                            break;
+                        case 'required-valid-image':
+                            // Check first if temporary email exists.
+                            if (!isset($_FILES[$_field]['tmp_name'])) {
+                                $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-upload'), $_field, $_rule_argument);
+                            }
+                            // Verify if it's a valid image.
+                            else {
+                                $verify_valid_image = getimagesize($_FILES[$_field]['tmp_name']);
+
+                                if ($verify_valid_image === false) {
+                                    $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-type'), $_field, $_rule_argument);
+                                }
+                            }
+                            break;
+                        case 'min-image-width':
+                            if (isset($_FILES[$_field]['tmp_name'])) {
+                                $image_sizes = getimagesize($_FILES[$_field]['tmp_name']);
+
+                                if ($image_sizes !== false) {
+                                    if ($image_sizes['width'] > $_rule_argument) {
+                                        $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-max-width'), $_field, $_rule_argument);
+                                    }
+                                }
+                                else {
+                                    $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-type'), $_field, $_rule_argument);
+                                }
+                            }
+                            break;
+                        case 'max-image-height':
+                            if (isset($_FILES[$_field]['tmp_name'])) {
+                                $image_sizes = getimagesize($_FILES[$_field]['tmp_name']);
+
+                                if ($image_sizes !== false) {
+                                    if ($image_sizes['height'] > $_rule_argument) {
+                                        $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-max-height'), $_field, $_rule_argument);
+                                    }
+                                }
+                                else {
+                                    $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-type'), $_field, $_rule_argument);
+                                }
+                            }
+                            break;
+                        case 'min-binary-size':
+                            // Check first if temporary email exists.
+                            if (!isset($_FILES[$_field]['tmp_name'])) {
+                                $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-upload'), $_field, $_rule_argument);
+                            }
+                            // Verify the minimum binary size in MB.
+                            else {
+                                $filesize = $_FILES[$_field]['tmp_name'];
+                                $human_filesizes = static::human_filesizes($filesize);
+
+                                if ($human_filesizes['MB'] < $_rule_argument) {
+                                    $_formatted_error = sprintf(Language::get('bootstrap.http-validation-min-binary-size'), $_field, $_rule_argument);
+                                }
+                            }
+                            break;
+                        case 'max-binary-size':
+                            // Check first if temporary email exists.
+                            if (!isset($_FILES[$_field]['tmp_name'])) {
+                                $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-upload'), $_field, $_rule_argument);
+                            }
+                            // Verify the mamixum vinary size in MB.
+                            else {
+                                $filesize = $_FILES[$_field]['tmp_name'];
+                                $human_filesizes = static::human_filesizes($filesize);
+
+                                if ($human_filesizes['MB'] > $_rule_argument) {
+                                    $_formatted_error = sprintf(Language::get('bootstrap.http-validation-max-binary-size'), $_field, $_rule_argument);
+                                }
                             }
                             break;
                         case 'exact-length':
@@ -179,7 +252,7 @@ class HTTP {
                             }
                             break;
                         case 'url':
-                            if (filter_var($_fields[$_field], FILTER_VALIDATE_URL) === false) {
+                            if (filter_var($_fields[$_field], FILTER_VALIDATE_URL) === false or strpos($_fields[$_field], '.') === false) {
                                 $_formatted_error = sprintf(Language::get('bootstrap.http-validation-url'), $_field);
                             }
                             break;
@@ -205,7 +278,7 @@ class HTTP {
                                 $_fields[$_field] = idn_to_ascii(urldecode($_fields[$_field]));
                             }
 
-                            $_validate = (preg_match("/^([a-z\d](-*[a-z\d])*)(\.([a-z\d](-*[a-z\d])*))*$/i", $_fields[$_field])  // Valid chars check.
+                            $_validate = (preg_match("/^([a-z\d](-*[a-z\d])*)(\.([a-z\d](-*[a-z\d])*))*$/i", $_fields[$_field]) // Valid chars check.
                                 and preg_match("/^.{1,253}$/", $_fields[$_field])                                               // Overall length check.
                                 and preg_match("/^[^\.]{1,63}(\.[^\.]{1,63})*$/", $_fields[$_field]));                          // Length of each label.
 
@@ -303,6 +376,37 @@ class HTTP {
         }
 
         return [];
+
+    }
+
+    /**
+     * Get human-readable filesizes.
+     *
+     * @access  public
+     * @param   integer
+     * @return  array
+     */
+    public static function human_filesizes($bytes) {
+
+        $bytes = floatval($bytes);
+
+        $arr_bytes = [
+            0 => ['unit' => "TB", 'value' => pow(1024, 4)],
+            1 => ['unit' => "GB", 'value' => pow(1024, 3)],
+            2 => ['unit' => "MB", 'value' => pow(1024, 2)],
+            3 => ['unit' => "KB", 'value' => 1024],
+            4 => ['unit' => "B", 'value' => 1],
+        ];
+
+        foreach ($arr_bytes as $arr_item) {
+            if ($bytes >= $arr_item['value']) {
+                $result = $bytes / $arr_item['value'];
+                $result = str_replace('.', ',', strval(round($result, 2))) . ' ' . $arr_item['unit'];
+                break;
+            }
+        }
+
+        return $result;
 
     }
 

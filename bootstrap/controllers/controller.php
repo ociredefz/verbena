@@ -9,8 +9,11 @@ namespace Bootstrap\Controllers;
 
 use Bootstrap\Environment\Tracer;
 use Bootstrap\Components\Language;
+use Bootstrap\Components\Security;
 use Bootstrap\Views\View;
 use Bootstrap\Exceptions\ControllerException;
+
+use App\Models\Followers;
 
 class Controller {
 
@@ -19,6 +22,12 @@ class Controller {
      * @var object
      */
     protected static $_instances = [];
+
+    /**
+     * View variables.
+     * @var array
+     */
+    protected static $view = [];
 
 
     /**
@@ -78,6 +87,72 @@ class Controller {
             View::redirect();
         }
 
+    }
+
+    /**
+     * Initialize conversation.
+     *
+     * @access  public
+     * @param   integer
+     * @return  void
+     */
+    public static function conversation($user_id) {
+
+        // Check valid user id before initialize
+        // the conversation system.
+        if (empty($user_id)) {
+            return false; 
+        }
+
+        // Retrieve user followers.
+        $followers = Followers::get_followers($user_id);
+        $users_list = '';
+
+        if (!empty($followers)) {
+            foreach ($followers as $key => $value) {
+                $encoded_id = md5(Security::generate_secure_token());
+                $name = substr(Security::filter_xss(ucfirst($value->fullname), true), 0, 256);
+                
+                // Set fallback for invalid/empty name.
+                if (empty($name) or strlen($name) <= 2) {
+                    $name = '(Invalid name)';
+                }
+
+                $users_list .= '<div id="conv-user-' . $encoded_id . '" class="conv-user conv-user-' . $encoded_id . '">
+                    <span class="pull-right status">Online</span>
+                    <img class="avatar" src="http://detekt.mooo.com/assets/images/avatars/avatar.png" alt="">
+                    <div class="name">
+                        <a id="conv-name-' . $encoded_id . '" href="javascript:void(0)">' . $name . '</a>
+                    </div>
+                </div>';
+            }
+        }
+
+        // Generate conversation code.
+        static::$view['conversation'] = 
+        '<!-- Conversation side. -->
+        <div id="conv-side-box">
+            <!-- Conversation chat bar. -->
+            <a id="conv-side-chat-bar" href="#">
+                <div>
+                    <em class="on"></em>
+                    <span class="user-list-text">Chat</span>
+                </div>
+                <span class="user-counter-text">(2)</span>
+            </a>
+            <!-- Conversation users list. -->
+            <div id="conv-side-ulist-box" class="hidden">
+                <div id="conv-side-ulist-header">
+                    <span>Start conversation</span>
+                    <span><i class="fa fa-cog"></i></span>
+                </div>
+                <div id="conv-side-ulist-body">
+                    ' . $users_list . '
+                </div>
+            </div>
+        </div>
+        <!-- Conversation windows container. -->
+        <div id="conv-windows"></div>';
     }
 
     /**
