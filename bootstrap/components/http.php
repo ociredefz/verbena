@@ -161,7 +161,7 @@ class HTTP {
                             }
                             // Verify if it's a valid image.
                             else {
-                                if (getimagesize($_FILES[$_field]['tmp_name']) === false or exif_imagetype($_FILES[$_field]['tmp_name'])) {
+                                if (getimagesize($_FILES[$_field]['tmp_name']) === false or exif_imagetype($_FILES[$_field]['tmp_name']) === false) {
                                     $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-type'), $_field, $_rule_argument);
                                 }
                             }
