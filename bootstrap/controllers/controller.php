@@ -13,8 +13,6 @@ use Bootstrap\Components\Security;
 use Bootstrap\Views\View;
 use Bootstrap\Exceptions\ControllerException;
 
-use App\Models\Followers;
-
 class Controller {
 
     /**
