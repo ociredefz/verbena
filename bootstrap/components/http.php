@@ -161,9 +161,7 @@ class HTTP {
                             }
                             // Verify if it's a valid image.
                             else {
-                                $verify_valid_image = getimagesize($_FILES[$_field]['tmp_name']);
-
-                                if ($verify_valid_image === false) {
+                                if (getimagesize($_FILES[$_field]['tmp_name']) === false or exif_imagetype($_FILES[$_field]['tmp_name'])) {
                                     $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-type'), $_field, $_rule_argument);
                                 }
                             }
@@ -173,7 +171,9 @@ class HTTP {
                                 $image_sizes = getimagesize($_FILES[$_field]['tmp_name']);
 
                                 if ($image_sizes !== false) {
-                                    if ($image_sizes['width'] > $_rule_argument) {
+                                    list($width, $height, $type, $attr) = $image_sizes;
+
+                                    if ($width > $_rule_argument) {
                                         $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-max-width'), $_field, $_rule_argument);
                                     }
                                 }
@@ -187,7 +187,9 @@ class HTTP {
                                 $image_sizes = getimagesize($_FILES[$_field]['tmp_name']);
 
                                 if ($image_sizes !== false) {
-                                    if ($image_sizes['height'] > $_rule_argument) {
+                                    list($width, $height, $type, $attr) = $image_sizes;
+
+                                    if ($height > $_rule_argument) {
                                         $_formatted_error = sprintf(Language::get('bootstrap.http-validation-image-max-height'), $_field, $_rule_argument);
                                     }
                                 }
@@ -203,10 +205,10 @@ class HTTP {
                             }
                             // Verify the minimum binary size in MB.
                             else {
-                                $filesize = $_FILES[$_field]['tmp_name'];
+                                $filesize = filesize($_FILES[$_field]['tmp_name']);
                                 $human_filesizes = static::human_filesizes($filesize);
 
-                                if ($human_filesizes['MB'] < $_rule_argument) {
+                                if ($human_filesizes[2] < $_rule_argument) {
                                     $_formatted_error = sprintf(Language::get('bootstrap.http-validation-min-binary-size'), $_field, $_rule_argument);
                                 }
                             }
@@ -218,10 +220,10 @@ class HTTP {
                             }
                             // Verify the mamixum vinary size in MB.
                             else {
-                                $filesize = $_FILES[$_field]['tmp_name'];
+                                $filesize = filesize($_FILES[$_field]['tmp_name']);
                                 $human_filesizes = static::human_filesizes($filesize);
 
-                                if ($human_filesizes['MB'] > $_rule_argument) {
+                                if ($human_filesizes[2] > $_rule_argument) {
                                     $_formatted_error = sprintf(Language::get('bootstrap.http-validation-max-binary-size'), $_field, $_rule_argument);
                                 }
                             }
@@ -391,12 +393,14 @@ class HTTP {
         $bytes = floatval($bytes);
 
         $arr_bytes = [
-            0 => ['unit' => "TB", 'value' => pow(1024, 4)],
-            1 => ['unit' => "GB", 'value' => pow(1024, 3)],
-            2 => ['unit' => "MB", 'value' => pow(1024, 2)],
-            3 => ['unit' => "KB", 'value' => 1024],
-            4 => ['unit' => "B", 'value' => 1],
+            0 => ['unit' => 'TB', 'value' => pow(1024, 4)],
+            1 => ['unit' => 'GB', 'value' => pow(1024, 3)],
+            2 => ['unit' => 'MB', 'value' => pow(1024, 2)],
+            3 => ['unit' => 'KB', 'value' => 1024],
+            4 => ['unit' => 'B', 'value' => 1],
         ];
+
+        $result = '';
 
         foreach ($arr_bytes as $arr_item) {
             if ($bytes >= $arr_item['value']) {
