@@ -14,6 +14,7 @@ use Bootstrap\Environment\Environment;
 use Bootstrap\Components\Security;
 use Bootstrap\Components\Session;
 use Bootstrap\Components\HTTP;
+use Bootstrap\Components\Cache;
 use Bootstrap\Exceptions\DispatcherException;
 use Bootstrap\Exceptions\ControllerException;
 
@@ -382,13 +383,17 @@ class Dispatcher {
     private static function _call_class($_route, $_arguments = [], $_throw = true) {
 
         // Initialize database factory.
-        // First check if driver is set to on.
+        // First check if database driver name is not empty.
         Environment::get_env('database.driver') ?
-        Factory::register_database() : null;
+        Factory::register_handler() : null;
+
+        // Initialize cache component.
+        // First check if cache driver name is not empty.
+        Environment::get_env('cache.driver') ?
+        Cache::register_handler() : null;
 
         // Return to anonymous function.
         if (is_null($_route['controller'])) {
-            echo 'lol';exit;
             return call_user_func_array($_route['method'], $_arguments);
         }
         else {

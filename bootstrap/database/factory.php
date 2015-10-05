@@ -53,13 +53,12 @@ class Factory {
 
     /**
      * Create the database instance.
-     * (supported: PDO extensions, MongoDB)
      *
      * @access  public
      * @param   void
      * @return  object
      */
-    public static function register_database() {
+    public static function register_handler() {
 
         // Get the database driver.
         $_driver = Environment::get_env('database.driver');

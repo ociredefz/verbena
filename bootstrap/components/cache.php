@@ -8,6 +8,7 @@
 namespace Bootstrap\Components;
 
 use Memcache;
+use Redis;
 use Bootstrap\Environment\Environment;
 use Bootstrap\Environment\Tracer;
 use Bootstrap\Exceptions\CacheException;
@@ -25,17 +26,17 @@ class Cache {
      * Cache driver instance.
      * @var object
      */
-    protected static $_cache_driver;
+    protected static $_driver;
 
 
     /**
-     * Constructor.
+     * Create the cache instance.
      *
      * @access  public
      * @param   void
      * @return  function
      */
-    public function __construct() {
+    public static function register_handler() {
 
         try {
             // Retrieve cache environment variables.
@@ -43,19 +44,53 @@ class Cache {
 
             // Check cache engine driver to be used.
             switch (static::$_env_cache['driver']) {
+
+                // Memcache cache server.
                 case 'memcache':
+
                     // Instance the memcache driver.
                     $_memcache = new Memcache();
 
                     // Retrieve cache server data.
                     $_hostname = static::$_env_cache['hostname'];
                     $_port = static::$_env_cache['port'];
+                    $_persistent = static::$_env_cache['persistent'];
 
                     // Add cache server.
-                    $_memcache->addServer($_hostname, $_port);
-                    
+                    $_memcache->addServer($_hostname, $_port, $_persistent);
+
                     // Set cache driver instance.
-                    static::$_cache_driver = $_memcache;
+                    static::$_driver = $_memcache;
+                    
+                    break;
+
+                // Redis cache server.
+                case 'redis':
+
+                    // Retrieve cache server data.
+                    $_hostname = static::$_env_cache['hostname'];
+                    $_port = static::$_env_cache['port'];
+                    $_persistent = static::$_env_cache['persistent'];
+
+                    // Instance the redis driver.
+                    $_redis = new Redis();
+
+                    // Connect to a cache server.
+                    if ($_redis) {
+
+                        // Use persistent connection.
+                        if ($_persistent) {
+                            $_redis->pconnect($_hostname, $_port);
+                        }
+                        // No-persistent connection.
+                        else {
+                            $_redis->connect($_hostname, $_port);
+                        }
+
+                        // Set cache driver instance.
+                        static::$_driver = $_redis;
+                    }
+
                     break;
             }
         }
@@ -63,18 +98,6 @@ class Cache {
             throw new CacheException($exception->get_formatted_exception());
         }
     
-    }
-
-    /**
-     * Destructor.
-     *
-     * @access  public
-     * @param   void
-     * @return  function
-     */
-    public function __destruct() {
-
-        static::$_cache_driver->close();
     }
 
     /**
@@ -87,9 +110,9 @@ class Cache {
      * @param   string
      * @return  function
      */
-    public static function cache_add($key, $value, $expire) {
+    public static function add($key, $value, $expire = 0) {
 
-        return static::$_cache_driver->add($key, $value, false, $expire);
+        return static::$_driver->add($key, $value, false, $expire);
 
     }
 
@@ -102,9 +125,9 @@ class Cache {
      * @param   string
      * @return  function
      */
-    public static function cache_replace($key, $value, $expire) {
+    public static function replace($key, $value, $expire = 0) {
 
-        return static::$_cache_driver->replace($key, $value, false, $expire);
+        return static::$_driver->replace($key, $value, false, $expire);
 
     }
 
@@ -118,9 +141,9 @@ class Cache {
      * @param   string
      * @return  function
      */
-    public static function cache_set($key, $value, $expire) {
+    public static function set($key, $value, $expire = 0) {
 
-        return static::$_cache_driver->set($key, $value, false, $expire);
+        return static::$_driver->set($key, $value);
 
     }
 
@@ -131,9 +154,9 @@ class Cache {
      * @param   string
      * @return  function
      */
-    public static function cache_get($key) {
+    public static function get($key) {
 
-        return static::$_cache_driver->get($key);
+        return static::$_driver->get($key);
 
     }
 
@@ -145,9 +168,9 @@ class Cache {
      * @param   void
      * @return  function
      */
-    public static function cache_increment($key, $num=1) {
+    public static function increment($key, $num = 1) {
 
-        return static::$_cache_driver->increment($key, $num);
+        return static::$_driver->increment($key, $num);
 
     }
 
@@ -160,9 +183,9 @@ class Cache {
      * @param   integer
      * @return  function
      */
-    public static function cache_decrement($key, $num = 1) {
+    public static function decrement($key, $num = 1) {
 
-        return static::$_cache_driver->decrement($key, $num);
+        return static::$_driver->decrement($key, $num);
 
     }
 
@@ -173,9 +196,9 @@ class Cache {
      * @param   void
      * @return  function
      */
-    public static function cache_delete($key) {
+    public static function delete($key) {
 
-        return static::$_cache_driver->delete($key, 0);
+        return static::$_driver->delete($key, 0);
 
     }
 
@@ -186,9 +209,9 @@ class Cache {
      * @param   void
      * @return  function
      */
-    public static function cache_flush() {
+    public static function flush() {
 
-        return static::$_cache_driver->flush();
+        return static::$_driver->flush();
 
     }
 
@@ -200,9 +223,9 @@ class Cache {
      * @param   void
      * @return  function
      */
-    public static function cache_get_stats() {
+    public static function get_stats() {
 
-        return static::$_cache_driver->getStats();
+        return static::$_driver->getStats();
 
     }
 

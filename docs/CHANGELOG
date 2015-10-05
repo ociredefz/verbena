@@ -2,7 +2,7 @@ CHANGELOG VERBENA - 2015.1-RC3
 ------------------------------
 
 
-2015.1-RC3 25-08-2015 (Updated: 31/08/2015)
+2015.1-RC3 25-08-2015 (updated: 05/10/2015)
 
     Added:
 
@@ -25,6 +25,7 @@ CHANGELOG VERBENA - 2015.1-RC3
 
     Change:
 
+        - Updated the cache component methods. (updated: 05/10/2015)
         - Exstend set_env() method from Environment to load the configuration 
           file with such key and return the populate fucsed environment table.
         - Change input() and inputs() from HTTP compoenent to field() and fields().
