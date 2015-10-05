@@ -7,9 +7,10 @@ $cache = [
 
     /**
      * Set the mail driver for cache engine.
-     * Available drivers: memcache
+     * Leave empty to disable the database handler.
+     * Available drivers: memcache (port: 11211), redis (port: 6379)
      */
-    'driver'            => 'memcache', 
+    'driver'            => '', 
 
     /**
      * Cache server hostname.
@@ -19,6 +20,11 @@ $cache = [
     /**
      * Cache server port.
      */
-    'port'              => 11211
+    'port'              => 6379,
+
+    /**
+     * Persistent connection?
+     */
+    'persistent'        => true
 
 ];
