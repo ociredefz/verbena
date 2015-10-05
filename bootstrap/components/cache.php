@@ -28,6 +28,13 @@ class Cache {
      */
     protected static $_driver;
 
+    /**
+     * Cache driver instance.
+     * (for direct external calls)
+     * @var object
+     */
+    public static $handler;
+
 
     /**
      * Create the cache instance.
@@ -60,8 +67,8 @@ class Cache {
                     $_memcache->addServer($_hostname, $_port, $_persistent);
 
                     // Set cache driver instance.
-                    static::$_driver = $_memcache;
-                    
+                    static::$handler = static::$_driver = $_memcache;
+
                     break;
 
                 // Redis cache server.
@@ -88,7 +95,7 @@ class Cache {
                         }
 
                         // Set cache driver instance.
-                        static::$_driver = $_redis;
+                        static::$handler = static::$_driver = $_redis;
                     }
 
                     break;
@@ -110,9 +117,9 @@ class Cache {
      * @param   string
      * @return  function
      */
-    public static function add($key, $value, $expire = 0) {
+    public static function add($key, $value) {
 
-        return static::$_driver->add($key, $value, false, $expire);
+        return static::$_driver->add($key, $value);
 
     }
 
@@ -125,9 +132,9 @@ class Cache {
      * @param   string
      * @return  function
      */
-    public static function replace($key, $value, $expire = 0) {
+    public static function replace($key, $value) {
 
-        return static::$_driver->replace($key, $value, false, $expire);
+        return static::$_driver->replace($key, $value);
 
     }
 
@@ -141,7 +148,7 @@ class Cache {
      * @param   string
      * @return  function
      */
-    public static function set($key, $value, $expire = 0) {
+    public static function set($key, $value) {
 
         return static::$_driver->set($key, $value);
 
